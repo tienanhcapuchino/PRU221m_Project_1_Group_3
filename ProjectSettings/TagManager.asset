@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Tower
+  - UnitInfo
+  - AttackRadius
+  - ActionIcon
   layers:
   - Default
   - TransparentFX
@@ -40,4 +44,37 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 1252606243
+    locked: 0
+  - name: Floor
+    uniqueID: 1992071515
+    locked: 0
+  - name: Range
+    uniqueID: 375880501
+    locked: 0
+  - name: Shadow
+    uniqueID: 787095461
+    locked: 0
+  - name: Dust
+    uniqueID: 2797461769
+    locked: 0
+  - name: UnitsAndTowers
+    uniqueID: 2851341527
+    locked: 0
+  - name: FlyingUnits
+    uniqueID: 264215907
+    locked: 0
+  - name: Bullets
+    uniqueID: 616863423
+    locked: 0
+  - name: Explosions
+    uniqueID: 3251997949
+    locked: 0
+  - name: HealthBars
+    uniqueID: 616062281
+    locked: 0
+  - name: TowerActions
+    uniqueID: 2629181601
     locked: 0
