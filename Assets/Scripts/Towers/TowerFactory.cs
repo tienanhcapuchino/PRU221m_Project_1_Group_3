@@ -5,40 +5,30 @@ using UnityEngine;
 public class TowerFactory : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _actions;
+    //Price of tower
+    private float _price;
     [SerializeField]
-    private GameObject _range;
+    // Damage amount
+    protected int _damage = 1;
+    [SerializeField]
+    // Cooldown between attacks
+    protected float _cooldown = 1f;
+    [SerializeField]
+    // Delay for fire animation
+    protected float _fireDelay = 0f;
+    // Sound effect
+    [SerializeField]
+    protected AudioClip _sfx;
+    [SerializeField]
+    protected GameObject _range;
 
-    private void Start()
+    public virtual void TryAttack(Transform target)
     {
-        Debug.Assert(_actions != null, "Have the asssert");
-        CloseActions();
     }
-    private void CloseActions()
+
+    public virtual void Fire(Transform target)
     {
-        if (_actions.activeSelf == true)
-        {
-            _actions.SetActive(false);
-        }
+
     }
-    public enum TowerType
-    {
-        MAGIC,
-        MORTAL,
-        BOWMAN,
-        BARRACKS,
-        BALLISTA
-    }
-    public void BuildTower(GameObject towerPrefab)
-    {
-        // Close active actions tree
-        CloseActions();
-        // If anough gold
-        GameObject newTower = Instantiate<GameObject>(towerPrefab, transform.parent);
-        newTower.name = towerPrefab.name;
-        newTower.transform.position = transform.position;
-        newTower.transform.rotation = transform.rotation;
-        // Destroy old tower
-        Destroy(gameObject);
-    }
+
 }
