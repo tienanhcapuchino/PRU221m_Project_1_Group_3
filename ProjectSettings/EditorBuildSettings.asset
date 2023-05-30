@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MenuOnGame.unity
+    guid: 29bac3c1537e5444db8ad193d9583abc
+  - enabled: 1
+    path: Assets/Scenes/MonsterScene.unity
+    guid: 3840d9588512413448fcf1c406fc615a
+  - enabled: 1
+    path: Assets/Scenes/Pause.unity
+    guid: b65aa65649ff64e43ad1be839cab6ab6
   m_configObjects: {}
