@@ -1280,8 +1280,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 119757123}
-  - component: {fileID: 119757125}
-  - component: {fileID: 119757124}
   m_Layer: 0
   m_Name: Pathway (2)
   m_TagString: Untagged
