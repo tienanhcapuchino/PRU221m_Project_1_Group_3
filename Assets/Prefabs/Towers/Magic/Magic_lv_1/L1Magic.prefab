@@ -1398,7 +1398,7 @@ MonoBehaviour:
   _fireDelay: 0
   _sfx: {fileID: 8300000, guid: dfd9f482daf5e46418ec9acbaeb81a34, type: 3}
   _range: {fileID: 1519029703549104}
-  _bulletsPrefab: {fileID: 0}
+  _bulletsPrefab: {fileID: 1123062418966432, guid: 6676c11316e31c048ac26c04216c6057, type: 3}
   _firePoint: {fileID: 4450081156310024}
 --- !u!114 &4192372817342520397
 MonoBehaviour:
