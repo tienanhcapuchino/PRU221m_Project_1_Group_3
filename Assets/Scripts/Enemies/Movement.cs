@@ -16,7 +16,7 @@ public class Movement : MonoBehaviour
 
     private void Start()
     {
-        target = WayPoint.Get;
+        //target = WayPoint.Get;
     }
 
     private void Update()
