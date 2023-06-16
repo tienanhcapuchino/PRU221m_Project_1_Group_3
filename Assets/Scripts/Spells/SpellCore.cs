@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class SpellCore : MonoBehaviour
 {
-    
+    private int damage;
+    private int duration;
+    private int coins;
     // Start is called before the first frame update
     void Start()
     {
