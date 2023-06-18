@@ -1319,7 +1319,6 @@ GameObject:
   - component: {fileID: 1793936102003021411}
   - component: {fileID: 5748620385601409981}
   - component: {fileID: 4192372817342520397}
-  - component: {fileID: 7210165579721584924}
   m_Layer: 8
   m_Name: L1Magic
   m_TagString: Tower
@@ -1428,19 +1427,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!65 &7210165579721584924
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1937046702580408}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1986137403310888
 GameObject:
   m_ObjectHideFlags: 0

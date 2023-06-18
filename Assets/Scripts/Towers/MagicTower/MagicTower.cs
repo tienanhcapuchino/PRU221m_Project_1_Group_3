@@ -34,6 +34,10 @@ public class MagicTower : TowerFactory
         {
             cooldownCounter += Time.fixedDeltaTime;
         }
+        if(_listEnermy.Count > 0)
+        {
+            TryAttack(_listEnermy[0].transform);
+        }
     }
 
     /// <summary>
@@ -72,8 +76,8 @@ public class MagicTower : TowerFactory
             if (target != null)
             {
                 // Create bullet
-                GameObject arrow = Instantiate(bulletPrefab, _firePoint.position, _firePoint.rotation);
-                IBullet bullet = arrow.GetComponent<IBullet>();
+                GameObject bulet = Instantiate(bulletPrefab, _firePoint.position, _firePoint.rotation);
+                IBullet bullet = bulet.GetComponent<IBullet>();
                 bullet.SetDamage(_damage);
                 bullet.Fire(target);
             }
