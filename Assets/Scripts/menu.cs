@@ -3,26 +3,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class menu : MonoBehaviour
 {
+    [SerializeField]
+    private Image _selectLevelDialog;
+
     public void StartGame()
     {
-        SceneManager.LoadScene(2);
+        _selectLevelDialog.gameObject.SetActive(true);
     }
 
-    void Update()
+    public void ChooseLevel()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            PauseGame(); // G?i hàm PauseGame khi ng??i ch?i b?m nút Esc
-        }
-    }
+        _selectLevelDialog.gameObject.SetActive(false);
+        SceneManager.LoadScene(1);
 
-    private void PauseGame()
-    {
-        Time.timeScale = 0f;
-        SceneManager.LoadScene(3);
     }
 
 }
