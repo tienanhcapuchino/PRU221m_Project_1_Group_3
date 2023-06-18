@@ -8,6 +8,10 @@ TagManager:
   - UnitInfo
   - AttackRadius
   - ActionIcon
+  - FlyingEnermy
+  - Bullet
+  - DefendRange
+  - Enermy
   layers:
   - Default
   - TransparentFX
