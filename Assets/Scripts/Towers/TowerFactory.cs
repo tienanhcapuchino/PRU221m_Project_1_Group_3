@@ -21,6 +21,8 @@ public class TowerFactory : MonoBehaviour
     protected AudioClip _sfx;
     [SerializeField]
     protected GameObject _range;
+    protected List<GameObject> _listEnermy = new List<GameObject>();
+
 
     public virtual void TryAttack(Transform target)
     {
@@ -29,6 +31,23 @@ public class TowerFactory : MonoBehaviour
     public virtual void Fire(Transform target)
     {
 
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Enermy") || collision.gameObject.CompareTag("FlyingEnermy"))
+        {
+            _listEnermy.Add(collision.gameObject);
+        }
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Enermy") || collision.CompareTag("FlyingEnermy"))
+        {
+            if (_listEnermy.Contains(collision.gameObject))
+            {
+                _listEnermy.Remove(collision.gameObject);
+            }
+        }
     }
 
 }
