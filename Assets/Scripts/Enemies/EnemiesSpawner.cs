@@ -82,10 +82,6 @@ public class EnemiesSpawner : MonoBehaviour
         currentWave++;
         StartCoroutine(StartWave());
     }
-    private int EnemiesPerWave()
-    {
-        return Mathf.RoundToInt(baseEnemies * Mathf.Pow(currentWave, difficultyScallingFactor));
-    }
     private void SpawnEnemies(GameObject enemy)
     {
         Instantiate(enemy, LevelManager.main.Startpoint.position, Quaternion.identity);
