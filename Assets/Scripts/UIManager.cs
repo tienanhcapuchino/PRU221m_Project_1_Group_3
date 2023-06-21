@@ -33,15 +33,12 @@ public class UIManager : MonoBehaviour
     // Origin point of camera dragging start
     private Vector3 dragOrigin = Vector3.zero;
      //Camera control component
-    private CameraControl cameraControl;
 
     /// <summary>
     /// Awake this instance.
     /// </summary>
     void Awake()
     {
-        cameraControl = FindObjectOfType<CameraControl>();
-        Debug.Assert(cameraControl && startScreen && pauseMenu && defeatMenu && victoryMenu && levelUI && defeatAttempts && goldAmount, "Wrong initial parameters");
     }
 
     /// <summary>
@@ -119,12 +116,6 @@ public class UIManager : MonoBehaviour
                                 hittedObj = tower.gameObject;
                                 break;
                             }
-                            AiBehavior aiBehavior = hit.collider.GetComponentInParent<AiBehavior>();
-                            if (aiBehavior != null)
-                            {
-                                hittedObj = aiBehavior.gameObject;
-                                break;
-                            }
                             hittedObj = hit.collider.gameObject;
                             break;
                         }
@@ -147,9 +138,6 @@ public class UIManager : MonoBehaviour
             if (cameraIsDragged == true)
             {
                 Vector3 pos = Camera.main.ScreenToViewportPoint(Input.mousePosition - dragOrigin);
-                 Camera dragging (inverted)
-                cameraControl.MoveX(-pos.x);
-                cameraControl.MoveY(-pos.y);
             }
         }
     }
