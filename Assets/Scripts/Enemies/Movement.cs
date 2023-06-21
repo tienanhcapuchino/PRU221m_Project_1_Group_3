@@ -9,22 +9,24 @@ public class Movement : MonoBehaviour
     [Header("Attributes")]
     [SerializeField] private float moveSpeed = 2f;
 
-    private Transform target;
-    
-    private WayPoint wayPoint { get;set; }
-    private int _pathIndex = 0;
+    private Vector3 target;
+
+    private WayPoint wayPoint;
+    private int _pathIndex = 1;
 
     private void Start()
     {
-        //target = WayPoint.Get;
+        wayPoint = GameObject.Find("Path").GetComponent<WayPoint>();
+        
+        target = wayPoint.Points[1];
     }
 
     private void Update()
     {
-        if(Vector2.Distance(target.position, transform.position) <= 0.1f)
+        if(Vector3.Distance(target, transform.position) <= 0.1f)
         {
             _pathIndex++;
-            if(_pathIndex == LevelManager.main.path.Length)
+            if(_pathIndex == wayPoint.Points.Length)
             {
                 EnemiesSpawner.onEnemyDestroy.Invoke();
                 Destroy(gameObject);
@@ -32,13 +34,13 @@ public class Movement : MonoBehaviour
             }
             else
             {
-                target = LevelManager.main.path[_pathIndex];
+                target = wayPoint.Points[_pathIndex];
             }
         }
     }
     private void FixedUpdate()
     {
-        Vector2 direction = (target.position - transform.position).normalized;   
+        Vector2 direction = (target - transform.position).normalized;   
         rb.velocity = direction * moveSpeed;
     }
 }
