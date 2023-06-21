@@ -786,7 +786,7 @@ RectTransform:
   m_Children:
   - {fileID: 1447537927}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1026,11 +1026,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 79d2543b1510cb547ae51639a1229ed1, type: 3}
---- !u!4 &1298328790 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4422638153650300, guid: 95af77e8cdae9ee4ea380986a467b4ef, type: 3}
-  m_PrefabInstance: {fileID: 480955908}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1406319346
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,7 +1092,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1447537926
 GameObject:
@@ -1640,8 +1635,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1969119497}
-  - component: {fileID: 1969119498}
-  - component: {fileID: 1969119499}
   m_Layer: 0
   m_Name: LevelManager
   m_TagString: Untagged
@@ -1665,69 +1658,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1969119498
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969119495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27bbd7c888f1d194981bc4e358e3dd98, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Startpoint: {fileID: 1298328790}
-  path: []
-  _pauseDialog: {fileID: 0}
---- !u!114 &1969119499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1969119495}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2927733ac7cdc00449589e97b359b63c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wave1:
-  - {fileID: 575735418304068921, guid: 9f88f37a9a6d83e4f9e33f53055de8b5, type: 3}
-  - {fileID: 575735418304068921, guid: 9f88f37a9a6d83e4f9e33f53055de8b5, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  - {fileID: 575735418304068921, guid: 9f88f37a9a6d83e4f9e33f53055de8b5, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  wave2:
-  - {fileID: 575735418304068921, guid: 9f88f37a9a6d83e4f9e33f53055de8b5, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  - {fileID: 4925752661805713504, guid: 9a17971665e91d741b752ae5debb62e7, type: 3}
-  - {fileID: 575735418304068921, guid: 9f88f37a9a6d83e4f9e33f53055de8b5, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  wave3:
-  - {fileID: 4925752661805713504, guid: 9a17971665e91d741b752ae5debb62e7, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  - {fileID: 575735418304068921, guid: 9f88f37a9a6d83e4f9e33f53055de8b5, type: 3}
-  - {fileID: 7088575768580745707, guid: f18e7bed8770de542bea0a3f2fdf4991, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  - {fileID: 4925752661805713504, guid: 9a17971665e91d741b752ae5debb62e7, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  wave4:
-  - {fileID: 575735418304068921, guid: 9f88f37a9a6d83e4f9e33f53055de8b5, type: 3}
-  - {fileID: 7088575768580745707, guid: f18e7bed8770de542bea0a3f2fdf4991, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  - {fileID: 4925752661805713504, guid: 9a17971665e91d741b752ae5debb62e7, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  - {fileID: 4925752661805713504, guid: 9a17971665e91d741b752ae5debb62e7, type: 3}
-  - {fileID: 7088575768580745707, guid: f18e7bed8770de542bea0a3f2fdf4991, type: 3}
-  - {fileID: 575735418304068921, guid: 9f88f37a9a6d83e4f9e33f53055de8b5, type: 3}
-  - {fileID: 8262812072659339827, guid: 7daa0cfc94a01e64796b1d549b0861d8, type: 3}
-  enemyPrefab: []
-  baseEnemies: 8
-  enemiesPerSecond: 0.5
-  timeBetweenWaves: 5
-  difficultyScallingFactor: 0.75
 --- !u!1001 &2140822549
 PrefabInstance:
   m_ObjectHideFlags: 0

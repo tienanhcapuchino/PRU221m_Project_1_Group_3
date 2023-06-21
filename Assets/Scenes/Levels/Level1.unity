@@ -19671,7 +19671,7 @@ Transform:
   - {fileID: 546641320}
   - {fileID: 1967987952}
   - {fileID: 420054705}
-  - {fileID: 2083508542}
+  - {fileID: 2138769695}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -21135,11 +21135,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2069807191}
   m_CullTransparentMesh: 1
---- !u!224 &2083508542 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 917646147732263896, guid: f5fe9bfe81227ff4c8e01be79b735e98, type: 3}
-  m_PrefabInstance: {fileID: 917646147935896294}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2091373600
 GameObject:
   m_ObjectHideFlags: 0
@@ -21386,7 +21381,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2119999546}
   m_CullTransparentMesh: 1
---- !u!1001 &917646147935896294
+--- !u!1001 &2138769694
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -21397,6 +21392,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 956731790}
+    - target: {fileID: 917646147732263847, guid: f5fe9bfe81227ff4c8e01be79b735e98, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 917646147732263896, guid: f5fe9bfe81227ff4c8e01be79b735e98, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -21483,7 +21482,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 917646147732263899, guid: f5fe9bfe81227ff4c8e01be79b735e98, type: 3}
       propertyPath: m_Name
-      value: Canvas
+      value: GradeBar
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f5fe9bfe81227ff4c8e01be79b735e98, type: 3}
+--- !u!224 &2138769695 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 917646147732263896, guid: f5fe9bfe81227ff4c8e01be79b735e98, type: 3}
+  m_PrefabInstance: {fileID: 2138769694}
+  m_PrefabAsset: {fileID: 0}
